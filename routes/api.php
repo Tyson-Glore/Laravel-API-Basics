@@ -8,5 +8,5 @@ Route::get('/user', function (Request $request) {
 })->middleware('auth:sanctum');
 
 
-Route::resource('categories', \App\Http\Controllers\Api\CategoryController::class);
-Route::resource('products', \App\Http\Controllers\Api\ProductController::class);
+Route::apiResource('categories', \App\Http\Controllers\Api\CategoryController::class);
+Route::apiResource('products', \App\Http\Controllers\Api\ProductController::class);
